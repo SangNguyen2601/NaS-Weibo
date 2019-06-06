@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">NaS-Weibo</string>
+    <string name="action_settings">Settings</string>
+    <string name="see_all">More</string>
+    <string name="login_label">Login</string>
+    <string name="logout_label">Logout</string>
+    <string name="privacy_label">Privacy &amp; Terms</string>
+    <string name="logout_des">Logout or switch account</string>
+    <string name="privacy_des">Read more about our privacy and terms</string>
+    <string name="email_label">Email</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="change_image_profile">Change image profile</string>
+    <string name="edit_user_name">Edit user name</string>
+    <string name="select_picture_gallery">Select a picture</string>
+    <string name="text_button_add_contact">Add Contact</string>
+    <string name="text_button_add_group">Add to Group</string>
+    <string name="text_start_conversation">Send Message</string>
+    <string name="delete_conversation">Delete conversation</string>
+
+    <string name="friend_group">Friends</string>
+    <string name="family_group">Family</string>
+    <string name="coworker_group">Co-worker</string>
+    <string name="acquaintances_group">Acquaintances</string>
+    <string name="group_items_unit">peoples</string>
+
+    <string name="login_hint">Welcome to NaS-Weibo</string>
+    <string name="or">Or</string>
+    <string name="login_footer">By signing in you are agree to our Privacy and Terms.</string>
+    <string name="empty_user_data_msg">No data found.</string>
+    <string name="signin_credential_false">SignIn credential false!</string>
+    <string name="waiting_sign_msg">Processing login&#8230;</string>
+    <string name="error_occurred">An error occurred, please try again later</string>
+    <string name="hint_username">Input your name</string>
+    <string name="wait_few_second_update_image">Photos will be updated in a few seconds</string>
+    <string name="hint_enter_email_search_contact">Enter someone email to find them on\nNaS-Weibo</string>
+    <string name="email_invalid_msg">Email is invalid, please enter other email.</string>
+    <string name="server_internal_error">The system was occurred, please try again</string>
+    <string name="cannot_add_yourself_msg">This is your email, please try another email</string>
+    <string name="user_not_exist">This email is not a user of NaS-Weibo, please try another email</string>
+    <string name="hint_add_contact_to_group">Add this contact to Group</string>
+    <string name="contact_empty_msg">Contact is empty!</string>
+    <string name="load_data_failed">Can not load data, please try again!</string>
+    <string name="start_conversation_failed">Can not start conversation.</string>
+    <string name="facebook_app_id">195291827696518</string>
+    <string name="fb_login_protocol_scheme">fb195291827696518</string>
+    <!--string name="gl_oauth_client_type_3">1075439248185-h5ltdagnmje1uq52ijuhrck4on65bni1.apps.googleusercontent.com</string-->
+    <string name="gl_oauth_client_type_3">547107433726-trfkct1rv8ggv46aig9vm7k6lc1ebnat.apps.googleusercontent.com</string>
+
+    <string name="message_sending">Sending</string>
+    <string name="message_failed">Failed</string>
+    <string name="download">Download</string>
+    <string name="cancel">Cancel</string>
+    <string name="upload">Upload</string>
+    <string name="resend_message">Resend</string>
+    <string name="delete_message">Delete</string>
+    <string name="have_no_conversation">No conversation</string>
+
+
+</resources>

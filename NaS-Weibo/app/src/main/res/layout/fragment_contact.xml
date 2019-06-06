@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.github.rahatarmanahmed.cpv.CircularProgressView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/load_contact_progress"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        app:cpv_animAutostart="true"
+        app:cpv_indeterminate="true" />
+
+    <RelativeLayout
+      android:id="@+id/layout_search"
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:orientation="horizontal"
+      android:layout_marginTop="8dp"
+      android:layout_marginBottom="8dp"
+      android:layout_marginRight="16dp"
+      android:background="@drawable/bg_search"
+      android:layout_marginLeft="16dp">
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:textSize="16sp"
+          android:text="Search"
+          android:layout_marginLeft="8dp"
+          android:layout_centerVertical="true"/>
+
+        <ImageView
+          android:id="@+id/img_search"
+          android:layout_width="32dp"
+          android:layout_height="32dp"
+          app:srcCompat="@drawable/ic_search"
+          android:hint="Search"
+          android:imeOptions="actionSearch"
+          android:inputType="text"
+          android:lines="1"
+          android:layout_centerVertical="true"
+          android:maxLines="1"
+          android:padding="4dp"
+          android:layout_alignParentEnd="true"
+          android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+      android:layout_below="@id/layout_search"
+        android:id="@+id/recycler_group_contact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_add_contact"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/ic_action_add"
+        tools:ignore="VectorDrawableCompat" />
+
+    <!-- Empty Collection view -->
+    <TextView
+        android:id="@+id/contact_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingTop="?actionBarSize"
+        android:text="@string/contact_empty_msg"
+        android:visibility="gone" />
+
+</RelativeLayout>

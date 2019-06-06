@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        card_view:cardElevation="1dp"
+        android:layout_width="144dp"
+        android:layout_height="168dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/block_avatar_status"
+                android:id="@+id/block_avatar"
+                />
+
+            <ImageView
+                android:id="@+id/btn_options"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="@dimen/spacing_normal"
+                android:src="@drawable/btn_more_option"/>
+
+            <LinearLayout
+                android:layout_below="@+id/block_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_normal">
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:id="@+id/contact_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:textSize="16sp"
+                    android:fontFamily="@string/font_family_condensed"
+                    android:lines="1"
+                    android:textAppearance="@style/PrimaryTitle" />
+
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:id="@+id/online_stamp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:textSize="14sp"
+                    android:lines="1"
+                    android:textAppearance="@style/SecondaryText" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

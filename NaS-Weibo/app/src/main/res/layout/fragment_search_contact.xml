@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.github.rahatarmanahmed.cpv.CircularProgressView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/waiting_search_contact"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        app:cpv_animAutostart="true"
+        app:cpv_indeterminate="true" />
+
+    <LinearLayout
+        android:id="@+id/block_email_search"
+        android:layout_marginTop="32dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:textSize="20sp"
+            android:theme="@style/Theme.EditText.Base"
+            android:id="@+id/et_email"
+            android:inputType="textEmailAddress"
+            android:hint="@string/email_label"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/hint_input_msg"
+            android:lines="2"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="@string/hint_enter_email_search_contact"
+            android:fontFamily="@styles/SmallText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_add_contact"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/effect_click_button"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:fontFamily="@styles/SecondaryText"
+        android:text="@string/text_button_add_contact"/>
+
+</RelativeLayout>

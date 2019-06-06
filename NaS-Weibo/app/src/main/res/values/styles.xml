@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="PrimaryTitle">
+        <item name="android:fontFamily">@string/font_family_light</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="SecondaryText">
+        <item name="android:fontFamily">@string/font_family_light</item>
+        <item name="android:textColor">@color/secondary_text_material_light</item>
+    </style>
+
+    <style name="HeaderText">
+        <item name="android:fontFamily">@string/font_family_medium</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="SmallText">
+        <item name="android:fontFamily">@string/font_family_regular</item>
+        <item name="android:textColor">@color/tertiary_text_material_light</item>
+        <item name="android:textSize">8sp</item>
+    </style>
+
+    <style name="AddContactDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.EditText.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">#c5c5c5</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+    </style>
+
+</resources>

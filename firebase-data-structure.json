@@ -1,0 +1,48 @@
+{
+  "users": {
+    "random-record-user-id": {
+      "avatar": "https://firebaes.google.com/photo/1",
+      "email": "nasa.cqt.ak11@gmail.com",
+      "name": "Anh Sang Nguyễn",
+      "status": {
+        "isOnine": false,
+        "timestamp": 12112314134324
+      }
+    }
+  },
+  "friend": {
+    "userid": {
+      "Friends": {},
+      "Family": {
+        "KqbBcEzgXT47Lo8JQqv-random": "friend-user-id"
+      },
+      "Co-worker": {
+        "KqbBcEzgXT47Lo8JQqv-random": "friend-user-id"
+      },
+      "Acquaintances": {}
+    }
+  },
+  "conversation": {
+    "userID": {
+      "conversationID1": {
+        "idReceiver": "groupID",
+        "idSender": "userID",
+        "lastMessage": "message as text",
+        "timestamp": 1236598745925554,
+        "status": 1
+      }
+    }
+  },
+  "message": {
+    "conversationID": {
+      "AUINsklaksfowj-randomID": {
+        "idReceiver": "groupID",
+        "idSender": "userID",
+        "type": "text",
+        "value": "message as text",
+        "timestamp": 1236598745925554,
+        "status": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#B433CA</color>
+    <color name="colorPrimaryDark">#70297E</color>
+    <color name="colorAccent">#B433CA</color>
+
+    <color name="primary_text_default_material_light">#de000000</color> <!-- Black 87% -->
+    <color name="secondary_text_material_light">#8a000000</color> <!-- Black 54% -->
+    <color name="tertiary_text_material_light">#8a000000</color> <!-- Black 54% (TODO: same as secondary?) -->
+
+    <color name="colorIndivateTab">#FFFFFF</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey_900">#212121</color>
+    <color name="grey_800">#212121</color>
+    <color name="grey_700">#616161</color>
+    <color name="grey_600">#757575</color>
+    <color name="grey_500">#9E9E9E</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_400">#BDBDBD</color>
+    <color name="grey_200">#EEEEEE</color>
+    <color name="grey_100">#F5F5F5</color>
+
+    <color name="red_500">#F44336</color>
+
+    <color name="btn_create">#ffffff</color>
+    <color name="btn_create_disabled">#c1acff</color>
+    <color name="btn_edit">#ffffff</color>
+    <color name="btn_edit_disabled">#c1acff</color>
+    <color name="btn_send">#774df2</color>
+    <color name="btn_send_disabled">#8e8e8e</color>
+
+    <!-- Group Channel List -->
+    <color name="groupChannelUnreadCountBackground">#7d62df</color>
+    <color name="groupChannelUnreadCountText">#ffffff</color>
+
+    <color name="groupChatDateText">#ffffff</color>
+    <color name="groupChatDateBackground">#C0C0C0</color>
+    <color name="groupChatAdminBackground">#e0fcff</color>
+
+    <color name="groupChatBubbleMe">#774df2</color>
+    <color name="groupChatTextMe">#ffffff</color>
+    <color name="groupChatBubbleOther">#eef1f6</color>
+    <color name="groupChatTextOther">#000000</color>
+
+    <color name="groupChatReadReceiptMe">#1fcc94</color>
+    <color name="groupChatReadReceiptOther">#00BCD4</color>
+  <color name="transparent">#00000000</color>
+
+</resources>

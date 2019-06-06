@@ -1,0 +1,80 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+
+android {
+    signingConfigs {
+        release {
+            keyAlias 'nasweibo'
+            keyPassword '123456789'
+            storeFile file('../NaSWeibokey.jks')
+            storePassword '123456789'
+        }
+    }
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.nasweibo.app"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 5
+        versionName "1.05"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:design:26.1.0'
+    compile 'com.android.support:percent:26.1.0'
+    implementation 'com.facebook.android:facebook-login:4.30.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    compile 'com.afollestad.material-dialogs:core:0.9.6.0'
+    compile 'com.github.bumptech.glide:glide:4.6.1'
+    compile 'com.thefinestartist:finestwebview:1.2.7'
+    compile 'de.hdodenhof:circleimageview:2.2.0'
+    compile 'com.github.rahatarmanahmed:circularprogressview:2.5.0'
+
+    compile 'com.google.firebase:firebase-database:11.8.0'
+    compile 'com.google.firebase:firebase-auth:11.8.0'
+    compile 'com.google.firebase:firebase-storage:11.8.0'
+    compile 'com.google.android.gms:play-services-auth:11.8.0'
+
+    /*compile 'com.google.firebase:firebase-database:16.0.1'
+    compile 'com.google.firebase:firebase-auth:16.0.1'
+    compile 'com.google.firebase:firebase-storage:16.0.1'
+    compile 'com.google.android.gms:play-services-auth:16.0.1'*/
+
+
+
+    compile 'com.dinuscxj:circleprogressbar:1.1.1'
+    compile 'org.jsoup:jsoup:1.10.2'
+    compile files('src/main/libs/lite-orm-1.9.2.jar')
+    compile 'org.apache.commons:commons-lang3:3.7'
+
+    compile('com.crashlytics.sdk.android:crashlytics:2.9.0@aar') {
+        transitive = true
+    }
+    compile 'com.google.firebase:firebase-core:11.8.0'
+    //implementation 'com.google.firebase:firebase-core:16.0.9'
+
+    compile 'hani.momanii.supernova_emoji_library:supernova-emoji-library:0.0.2'
+}
+
+
+apply plugin: 'com.google.gms.google-services'

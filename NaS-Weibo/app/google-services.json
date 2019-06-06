@@ -1,0 +1,52 @@
+{
+  "project_info": {
+    "project_number": "547107433726",
+    "firebase_url": "https://nas-weibo-v2-cd766.firebaseio.com",
+    "project_id": "nas-weibo-v2-cd766",
+    "storage_bucket": "nas-weibo-v2-cd766.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:547107433726:android:f3e0e8587fc9c0f4",
+        "android_client_info": {
+          "package_name": "com.nasweibo.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "547107433726-olh2udqkchibijsesf32rgqibvl8ot4p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nasweibo.app",
+            "certificate_hash": "b2e2fdedb2fa4598bdbbf41978b06bc12d2807d0"
+          }
+        },
+        {
+          "client_id": "547107433726-trfkct1rv8ggv46aig9vm7k6lc1ebnat.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqU5FEXQ75BF-PuuHHn6P000X15hZXuGE"
+        }
+      ],
+      "services": {
+	    "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+		  "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "547107433726-trfkct1rv8ggv46aig9vm7k6lc1ebnat.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
